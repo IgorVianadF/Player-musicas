@@ -5,10 +5,16 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgb(236, 131, 131), rgb(255, 179, 39));
+  background-image: linear-gradient(
+    rgb(236, 131, 131),
+    rgb(236, 131, 131),
+    rgb(255, 179, 39)
+  );
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem;
+  max-height: 100%;
+  max-width: 100%;
 }
 .wrapper {
   display: flex;
@@ -20,8 +26,7 @@ body {
 }
 
 #artistimg {
-  max-width: 20%;
-  min-width: 10%;
+  max-width: 30rem;
   border-radius: 20px;
   border: solid 2px rgb(160, 59, 0);
 }
@@ -52,10 +57,25 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.config #back,
-#next {
-  background: rgb(243, 147, 58);
-  border: solid 2px rgb(160, 59, 0);
+.config #next,
+#back {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background: linear-gradient(#ff607a, rgb(255, 145, 0));
+  transition: background 1s ease-out;
+  border: solid 1px rgb(160, 59, 0);
+  border-radius: 10px;
+  padding: 5px 20px 0px 20px;
+}
+
+.config #playpause {
+  display: flex;
+  align-items: baseline;
+  justify-content: right;
+  background: linear-gradient(#ff607a, rgb(255, 145, 0));
+  transition: background 1s ease-out;
+  border: solid 1px rgb(160, 59, 0);
   border-radius: 10px;
   padding: 5px 20px;
 }

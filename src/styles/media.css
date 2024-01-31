@@ -1,0 +1,49 @@
+@media only screen and (max-width: 820px) {
+  .wrapper {
+    gap: 15rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    gap: 6rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #artistimg {
+    max-width: 26rem;
+  }
+}
+
+@media only screen and (max-width: 459px) {
+  #artistimg {
+    max-width: 20rem;
+  }
+  .wrapper {
+    gap: 5rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  #artistimg {
+    max-width: 16rem;
+  }
+  .wrapper {
+    gap: 5rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #artistimg {
+    max-width: 16rem;
+  }
+  .wrapper {
+    gap: 4rem;
+    justify-content: space-between;
+  }
+}
